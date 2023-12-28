@@ -1,0 +1,33 @@
+img{
+    height:70px;
+    width:70px;
+}
+nav{
+    margin-left: auto;
+}
+.nav-link {
+    font-size: 20px;
+    color: black;
+    margin-right: 10px;
+  }  
+.nav-link:hover {
+    color: blue; /* Color on hover */
+  }
+.highlight {
+    color: red;
+    font-size: 25px;
+  }
+  .carousel img {
+    width: auto;
+    height: 600px;
+  }
+  
+  /* Style for the caption text in the Carousel */
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+  }
+  
