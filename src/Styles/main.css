@@ -15,19 +15,64 @@ nav{
   }
 .highlight {
     color: red;
-    font-size: 25px;
+    font-size: 40px;
   }
-  .carousel img {
-    width: auto;
+  
+  /* Optionally, add more styles to the image if needed */
+  .image-container img {
+    width: 900px;
     height: 600px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto;
   }
-  
-  /* Style for the caption text in the Carousel */
-  .carousel-caption {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-    color: #2757db; /* White text color */
-    padding: 20px;
+  .image-caption {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    border-radius: 8px;
+    font-size: 30px;
+    color:white;
     text-align: center;
-    font-size: 25px;
+    bottom: 0;
+
+  }
+  .row.mb-3 {
+    margin-bottom: 1rem;
   }
   
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-item {
+    display: flex;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+  
+  .contact-item span.info {
+    margin-left: 10px;
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; /* Adjust margin as needed */
+    margin-bottom: 70px;
+  }
+  .social-media-icons svg {
+    margin: 0 40px; /* Adjust margin between icons */
+  }
+  .footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 2px solid #000; /* Add a border at the top of the footer */
+    font-size: 20px;
+  }

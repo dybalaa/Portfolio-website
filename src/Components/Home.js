@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Nav, Navbar, Container, NavDropdown, Carousel } from "react-bootstrap";
+import { Nav, Navbar, Container, NavDropdown, Image } from "react-bootstrap";
 import "../Styles/main.css";
 
 export default class Home extends Component {
@@ -28,44 +28,15 @@ export default class Home extends Component {
           </Container>
         </Navbar>
 
-        <Carousel fade interval={3000} indicators={false} >
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/Images/mgr.jpg"
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              Hello, I'm <span className="highlight">Ubar Kasozi</span>.
-              <br />
-              I'm a Front-end Developer.
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="../public/Images/UbarKasozi.png"
-              alt="Second slide"
-            />
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="../public/Images/UbarKasozi.png"
-              alt="Third slide"
-            />
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+        <div className="image-container">
+          <Image src="/Images/kun2.jpeg" fluid />
+        </div>
+
+        <div className="image-caption">
+          Hello, I'm <span className="highlight">Ubar Kasozi</span>.
+          <br />
+          I'm a Front-end Developer.
+        </div>
       </>
     );
   }
