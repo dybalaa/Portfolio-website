@@ -1,6 +1,6 @@
-import "../Styles/main.css";
-import React, { useEffect, useState } from 'react'; 
 
+import React, { useEffect, useState } from 'react'; 
+import "../Styles/main.css";
 
 const Skills = () => {
     const [animate, setAnimate] = useState(true);
@@ -19,7 +19,7 @@ const Skills = () => {
     { name: 'HTML, CSS3, JavaScript(ES6+)', percentage: 75 },
     { name: 'React & Angular', percentage: 65 },
     { name: 'MongoDB, MSSQL', percentage: 65 },
-    { name: 'UI/UX', percentage: 55 },
+    { name: 'UI/UX Design', percentage: 55 },
     { name: 'TypeScript', percentage: 60 },
     { name: 'Node, Django', percentage: 65 },
     { name: 'WordPress', percentage: 70 },
