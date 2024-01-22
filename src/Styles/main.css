@@ -32,18 +32,18 @@ img {
   margin-top: 5px;
 }
 .navbar {
-  height: 70px; /* Adjust the height as needed */
+  height: 65px; 
   background-color: #454545;
   color: white;
 }
 
 .navbar .nav-link {
-  font-size: 21px;
+  font-size: 20px;
   margin-right: 100px;
   color: white;
 }
 .nav-link:hover {
-  color: #3498db; /* Color on hover */
+  color: #3498db; 
   transform: scale(1.1);
   font-weight: bold;
 }
@@ -64,7 +64,7 @@ img {
   margin-top: 150px;
 }
 .description1 {
-  font-size: 20px;
+  font-size: 19px;
 }
 .description2 {
   font-size: 18px;
@@ -72,7 +72,7 @@ img {
 }
 
 strong {
-  color: black;
+  color: #3498db;
   font-weight: bold;
   font-size: 25px;
 }
@@ -83,29 +83,28 @@ strong {
   margin-top: 90px;
 }
 .button-hire-me {
-  background-color: black;
+  background-color: #3498db;
   color: white;
   transition: background-color 0.9s ease; /* Add a smooth transition for the background color change */
-  border-color: black;
-  width: 100px;
-  border-radius: 0em;
+  width: 120px;
   height: 40px;
+  font-size: 18px;
 }
 
 .button-hire-me:hover {
-  background-color: #454545; /* Darker color on hover */
+  background-color: lightenedColorhsl(207, 10%, 10%);
 }
 .button-resume {
   background-color: white;
   color: black;
   border-color: black;
   transition: background-color 0.9s ease;
-  width: 100px;
-  border-radius: 0em;
+  width: 120px;
   height: 40px;
+  font-size: 18px;
 }
 .button-resume:hover {
-  background-color: #454545;
+ background-color: lightenedColorhsl(207, 90%, 70%);
   color: white;
 }
 /* Optionally, add more styles to the image if needed */
@@ -130,7 +129,7 @@ h2 {
   margin-left: 70px;
 }
 .profile p {
-  font-size: 19px;
+  font-size: 18px;
   margin-top: 40px;
 }
 .carousel-content {
@@ -138,7 +137,7 @@ h2 {
   padding: 20px; /* Adjust padding as needed */
 }
 .carousel {
-  border: solid black; /* Add a border to the Carousel */
+  border: solid #3498db; /* Add a border to the Carousel */
   border-radius: 2px; /* Optional: Add border-radius for rounded corners */
   overflow: hidden; /* Optional: Hide the overflowing content */
 }
@@ -171,11 +170,10 @@ h2 {
   display: inline-block;
   width: 500px;
   color: #e0e0e0;
-  font-size: 19px;
+  font-size: 18px;
   text-align: left;
   margin-left: 30px;
 }
-
 .skill-bar {
   display: inline-block;
   width: 500px;
@@ -186,7 +184,7 @@ h2 {
 
 .skill-progress {
   height: 100%;
-  background-color: black;
+  background-color:#3498db;
 }
 
 .skill-percentage {
@@ -195,11 +193,10 @@ h2 {
 }
 .contact-form {
   float: left;
-  width: 60%;
+  width: 55%;
   margin-left: 10px;
-}
-.contact_form {
-  margin-top: 30px;
+  border-right: 1px solid #3498db; /* Adjust the color as needed */
+  padding-right: 20px;
 }
 .contact-info {
   float: right;
@@ -231,25 +228,54 @@ h2 {
 }
 
 #footer {
-  text-align: center;
   margin-top: 120px;
-  padding: 10px;
-  background-color: #454545;
-  border-top: 2px solid; /* Add a border at the top of the footer */
-  font-size: 20px;
-  color: white;
-  height: 70px;
+  font-size: 19px;
 }
 
 .social-media-icons svg {
   margin: 0 20px; /* Adjust margin between icons */
 }
 
-#project {
+.borderstyle {
+  border: solid #3498db;
+  border-radius: 4em;
+}
+
+.icon-background {
   background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Adjust the size of the circular background */
+  height: 50px; /* Adjust the size of the circular background */
+}
+
+#project {
+  background-color: #3498db;
   color: white;
-  height: 570px;
+  height: 630px;
   margin-top: 120px;
+}
+.project:hover {
+  transform: scale(1.1);
+  z-index: 1; /* Ensure the hovered element is above others */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adjust the box shadow as needed */
+}
+.more-projects-button {
+  margin-top: 20px;
+  border-radius: 0em;
+  background-color: white;
+  color: black;
+  transition: background-color 0.9s ease;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 2em;
+}
+.more-projects-button :hover {
+  background-color: #3498db;
+  color: white;
 }
 #homes-section {
   height: 500px;
@@ -270,6 +296,7 @@ h1 {
   float: left;
   width: 30%;
   margin-left: 5px;
+  margin: 0px;
 }
 .project2 {
   float: left;
@@ -282,7 +309,6 @@ h1 {
   margin-right: 5px;
   margin-left: 5px;
 }
-/* Add the following styles to your main.css file */
 
 .project {
   position: relative;
@@ -297,6 +323,7 @@ h1 {
   transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
   background-color: white;
   color: black;
+  border-color: black;
 }
 .live-preview-button:hover {
   background-color: #454545;

@@ -56,7 +56,7 @@ export default class Projects extends Component {
           </div>
         </div>
 
-        <Button variant="secondary"  onClick={this.handleShowMoreProjects}>
+        <Button variant="secondary" className="more-projects-button"  onClick={this.handleShowMoreProjects}>
             More Projects
           </Button>
 

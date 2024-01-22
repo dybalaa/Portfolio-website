@@ -18,7 +18,7 @@ export default class About extends Component {
                 skilled Software Developer with over 3 years of professional
                 experience.
               </p>
-              <h2>My Services</h2>
+              <h2> My Services</h2>
 
               <Carousel indicators={true} prevLabel="" nextLabel="">
                 <Carousel.Item>

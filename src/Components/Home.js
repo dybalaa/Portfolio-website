@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Nav, Navbar, Image, Button } from "react-bootstrap";
 import "../Styles/main.css";
 
-import { FaTwitter, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 
 export default class Home extends Component {
   constructor(props) {
@@ -42,7 +42,7 @@ export default class Home extends Component {
               <Nav style={{ marginLeft: "auto", fontSize: "20px" }}>
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+                <Nav.Link href="#about">Portfolio</Nav.Link>
                 <Nav.Link href="#contact">Contact</Nav.Link>
               </Nav>
             </Navbar.Collapse>
@@ -61,25 +61,17 @@ export default class Home extends Component {
               <Button variant="outline-primary" className="button-hire-me">
                 Hire me
               </Button>{" "}
-              <span style={{ margin: '0 30px' }}></span>
+              <span style={{ margin: "0 30px" }}></span>
               <Button variant="outline-primary" className="button-resume">
                 Resume
               </Button>{" "}
               <div className="social-media-icons">
                 <a
-                  href="https://twitter.com/ubarkaz"
+                  href="https://github.com/ubarkaz"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter size={35} color="black" />
-                </a>
-
-                <a
-                  href="https://linkedin.com/in/UbarKasozi"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedin size={35} color="black" />
+                  <FaLinkedin size={33} color="black" />
                 </a>
 
                 <a
@@ -87,16 +79,17 @@ export default class Home extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub size={35} color="black" />
+                  <FaGithub size={33} color="black" />
                 </a>
 
                 <a
-                  href="https://facebook.com/UbarKunDybala"
+                  href="https://github.com/ubarkaz"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook size={35} color="black" />
+                  <FaFacebook size={33} color="black" />
                 </a>
+
               </div>
             </div>
 

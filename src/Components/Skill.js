@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react'; 
 import "../Styles/main.css";
 
@@ -9,9 +8,9 @@ const Skills = () => {
     console.log('useEffect triggered');
       const timer = setTimeout(() => {
         setAnimate(false);
-      }, 2000); // Adjust the delay time as needed
+      }, 2000); // Adjusts the delay time as needed
   
-      // Clear the timer when the component is unmounted
+      // This will clear the timer when the component is unmounted
       return () => clearTimeout(timer);
     }, []);
 
@@ -28,7 +27,7 @@ const Skills = () => {
 
   return (
     <div className={`skills-container ${animate ? 'animate' : ''}`}>
-        <h2>My Technical Skils</h2>
+        <h2>My Technical Skills</h2>
     <ul className='skills-list'>
       {skillsData.map((skill, index) => (
         <li key={index} className='skill-item'>
