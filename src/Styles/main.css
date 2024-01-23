@@ -34,18 +34,23 @@ img {
 .navbar {
   height: 65px; 
   background-color: #454545;
-  color: white;
 }
 
 .navbar .nav-link {
   font-size: 20px;
   margin-right: 100px;
   color: white;
+  cursor: pointer;
 }
 .nav-link:hover {
   color: #3498db; 
   transform: scale(1.1);
+  font-weight: bold; 
+}
+.nav-link.active {
+  color: blue;
   font-weight: bold;
+  font-size: 25px;
 }
 .navbar-toggler {
   border: none; /* Remove the border */
@@ -197,6 +202,7 @@ h2 {
   margin-left: 10px;
   border-right: 1px solid #3498db; /* Adjust the color as needed */
   padding-right: 20px;
+
 }
 .contact-info {
   float: right;
@@ -255,7 +261,7 @@ h2 {
   background-color: #3498db;
   color: white;
   height: 630px;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 .project:hover {
   transform: scale(1.1);
@@ -279,14 +285,17 @@ h2 {
 }
 #homes-section {
   height: 500px;
+  background-color: yellow;
 }
 #about {
-  margin-top: 120px;
+  margin-top: 80px;
   height: 500px;
+  background-color: pink;
 }
 #contact {
-  margin-top: 120px;
+  margin-top: 80px;
   height: 450px;
+  background-color: green;
 }
 h1 {
   font-size: 35px;

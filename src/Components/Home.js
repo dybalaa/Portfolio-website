@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Nav, Navbar, Image, Button } from "react-bootstrap";
 import "../Styles/main.css";
+import { Link as ScrollLink } from "react-scroll";
 
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 
@@ -39,11 +40,19 @@ export default class Home extends Component {
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav style={{ marginLeft: "auto", fontSize: "20px" }}>
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#about">Portfolio</Nav.Link>
-                <Nav.Link href="#contact">Contact</Nav.Link>
+            <Nav style={{ marginLeft: "auto", fontSize: "20px" }}>
+                <Nav.Link activeClass="active" spy={true} smooth={true} as={ScrollLink} to="homes-section"  duration={500}>
+                  Home
+                </Nav.Link>
+                <Nav.Link activeClass="active" spy={true} smooth={true} as={ScrollLink} to="about" duration={500}>
+                  About
+                </Nav.Link>
+                <Nav.Link activeClass="active" spy={true} smooth={true} as={ScrollLink} to="project"  duration={500}>
+                  Portfolio
+                </Nav.Link>
+                <Nav.Link activeClass="active" spy={true} smooth={true} as={ScrollLink} to="contact" duration={500}>
+                  Contact
+                </Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -98,6 +107,7 @@ export default class Home extends Component {
             </div>
           </div>
         </section>
+      
       </>
     );
   }
