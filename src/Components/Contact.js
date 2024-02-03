@@ -54,11 +54,11 @@ const Contact = () => {
 
   return (
     <>
-      <section id="contact">
-        <h1>Lets Connect</h1>
+      <section id="contact" >
+        <h1>Get in touch</h1>
         <div className="contact-container">
           <div className="contact-form">
-            <h2>Message me</h2>
+            <h2> Message <span className="blue-text">me</span></h2>
             <Row className="justify-content-center align-items-center flex-column">
               {" "}
               {/* Center the row horizontally */}
@@ -78,7 +78,6 @@ const Contact = () => {
                         name="firstname"
                         placeholder="First name"
                         type="text"
-                        required
                       />
                     </Col>
                     <Col className="form-group">
@@ -125,7 +124,7 @@ const Contact = () => {
             </Row>
           </div>
           <div className="contact-info">
-            <h2 className="connect">Connect with me</h2>
+            <h2>Connect <span className="blue-text">with me</span></h2>
             <div className="contact-item">
               <FaPhone size={33} color="black" />
               <span className="info">+447475494000 </span>

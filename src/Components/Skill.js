@@ -27,7 +27,9 @@ const Skills = () => {
 
   return (
     <div className={`skills-container ${animate ? 'animate' : ''}`}>
-        <h2>My Technical Skills</h2>
+      
+        <h2>My <span className="blue-text">Technical Skills</span></h2>
+        
     <ul className='skills-list'>
       {skillsData.map((skill, index) => (
         <li key={index} className='skill-item'>

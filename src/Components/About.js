@@ -9,30 +9,31 @@ export default class About extends Component {
   render() {
     return (
       <>
-        <section id="about">
+        <section id="about" >
           <h1>Who I am</h1>
           <div className="about-content">
             <div className="profile">
-              <p>
+              <p style={{fontSize:"17px"}}>
                 I'm a First Class Graduate of Information Technology and a
                 skilled Software Developer with over 3 years of professional
                 experience.
               </p>
-              <h2> My Services</h2>
-
+              <h2>
+              My <span className="blue-text">Services</span>
+              </h2>
               <Carousel indicators={true} prevLabel="" nextLabel="">
                 <Carousel.Item>
                   <div className="carousel-content">
                     <FontAwesomeIcon icon={faDesktop} size="2x" />
                     <h2
                       style={{
-                        fontSize: "20px",
+                        fontSize: "18px",
                         marginTop: "17px",
                       }}
                     >
                       Web Development
                     </h2>
-                    <p style={{ marginTop: "10px", fontSize: "18px" }}>
+                    <p style={{ marginTop: "10px", fontSize: "17px" }}>
                       Specializing in full-stack development of dynamic and
                       responsive websites and applications. I create interactive visually
                       appealing user interfaces,
@@ -45,13 +46,13 @@ export default class About extends Component {
                     <FontAwesomeIcon icon={faMobile} size="2x" />
                     <h2
                       style={{
-                        fontSize: "20px",
+                        fontSize: "18px",
                         marginTop: "17px",
                       }}
                     >
                       Mobile Development
                     </h2>
-                    <p style={{ marginTop: "10px", fontSize: "18px" }}>
+                    <p style={{ marginTop: "10px", fontSize: "17px" }}>
                       As a React Native developer, I specialize in creating
                       dynamic, visually appealing and cross-platform mob
                       applications

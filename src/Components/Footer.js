@@ -3,7 +3,7 @@ import {
   MDBFooter,
   MDBContainer,
 } from 'mdb-react-ui-kit';
-import { FaTwitter, FaLinkedin, FaGithub, FaFacebook, FaInstagram, FaArrowUp} from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaGithub, FaFacebook, FaInstagram } from "react-icons/fa";
 
 const iconSize = 23;
 
@@ -12,13 +12,6 @@ export default function App() {
   //I created this function to ensure the social medai icons open in a new tab
   const openLinkInNewTab = (url) => {
     window.open(url, '_blank', 'noopener noreferrer');
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
   };
 
   return (
@@ -54,10 +47,6 @@ export default function App() {
         <section className='mb-4'>
         <p>&copy; Ubar Kasozi 2023 ||  All rights reserved  || Terms and conditions apply</p>
         </section>
-
-        <button className='btn btn-outline-light' onClick={scrollToTop}>
-          <FaArrowUp size={iconSize} />
-        </button>
 
       </MDBContainer>
 

@@ -22,10 +22,10 @@ export default class Projects extends Component {
 
   render() {
     return (
-      <section id="project">
+      <section id="project" >
         <h1>Projects</h1>
-        <p style={{fontSize:'18px', marginTop:'50px',marginBottom:'50px'}}>
-        Explore My Works and Projects, Where Every Line of Code Tells a Unique Story of <br/>Innovation.
+        <p style={{fontSize:'17px', marginTop:'30px',marginBottom:'30px'}}>
+        Explore My Works and Projects, Where Every Line of Code Tells a Unique Story of <br/>Innovation and Critical Thinking
         </p>
         <div>
           <div className="project project1">

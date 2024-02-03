@@ -3,6 +3,7 @@ import { Nav, Navbar, Image, Button } from "react-bootstrap";
 import "../Styles/main.css";
 import { Link as ScrollLink } from "react-scroll";
 
+
 import { FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 
 export default class Home extends Component {
@@ -10,6 +11,7 @@ export default class Home extends Component {
     super(props);
     this.state = {
       name: "", // Initial state for the name
+      isNavbarCollapsed: true,
     };
   }
 
@@ -28,19 +30,22 @@ export default class Home extends Component {
         this.setState({ name: currentName + nextLetter });
       }
     }, 400); // Adjust the interval duration as needed
+    
   }
+  
 
   render() {
     return (
       <>
         <section id="homes-section">
-          <Navbar collapseOnSelect expand="lg" fixed="top">
+          <Navbar collapseOnSelect expand="lg" fixed="top" variant="dark">
             <Navbar.Brand href="#home">
-              <img src="/Images/UbarKasozi.png" alt="Logo"></img>
+              <h1>UBAR KASOZI</h1>
+              
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav style={{ marginLeft: "auto", fontSize: "20px" }}>
+            <Nav style={{ marginLeft: "auto"  }}>
                 <Nav.Link activeClass="active" spy={true} smooth={true} as={ScrollLink} to="homes-section"  duration={500}>
                   Home
                 </Nav.Link>
@@ -60,21 +65,26 @@ export default class Home extends Component {
           <div className="home-main">
             <div className="description">
               <p className="description1">
-                Hello, I'm <strong>{this.state.name}</strong>,<br />a software
+                Hello and welcome I'm <strong>{this.state.name}</strong>,<br />a software
                 developer by profession
               </p>
               <p className="description2">
-                "I like crafting scalable and robust products with greater user
-                experience"
+                "I like crafting, exciting, innovative, scalable and robust products with greater user
+                design to meet client expectation
               </p>
-              <Button variant="outline-primary" className="button-hire-me">
+              <Button variant="outline-primary" className="button-hire-me" as={ScrollLink}
+                to="contact"
+                spy={true}
+                smooth={true}
+                duration={500}>
                 Hire me
               </Button>{" "}
               <span style={{ margin: "0 30px" }}></span>
               <Button variant="outline-primary" className="button-resume">
                 Resume
               </Button>{" "}
-              <div className="social-media-icons">
+              
+              <div className="social-media-icons" >
                 <a
                   href="https://github.com/ubarkaz"
                   target="_blank"
@@ -103,7 +113,7 @@ export default class Home extends Component {
             </div>
 
             <div className="image-container">
-              <Image src="/Images/middleseximage.jpg" fluid />
+              <Image src="/Images/middleseximage-removebg-preview.png" fluid />
             </div>
           </div>
         </section>

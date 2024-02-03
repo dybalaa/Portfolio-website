@@ -5,6 +5,87 @@
 /* Existing styles */
 
 /* Medium screens (tablets) */
+
+@media only screen and (max-width: 576px) {
+  .logo {
+    font-size: o.5em;
+  }
+  .home-main {
+    flex-direction: column;
+  }
+.description{
+  text-align: center;
+  margin-left: 10vw;
+}
+.description.image-container{
+  width:100%;
+}
+.image-container{
+  justify-content: center;
+  margin-left: 10vw;
+  max-width: 100%;
+  height: auto;
+}
+  .social-media-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    margin-top: 20px; /* Adjust the top margin as needed */
+  }
+
+  .navbar-collapse {
+    background-color:#454545 ; /* Set the background color for the mobile menu overlay */
+  }
+
+  .nav-link {
+    color: #fff; /* Set the text color for the links */
+  }
+
+  .navbar-toggler-icon {
+    color: #ddd;
+    align-items: center;
+  }
+  #homes-section {
+    margin-bottom: 500px;
+  }
+  #about{
+    height: 100px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile p {
+    margin-bottom: 20px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  .skills {
+    margin-top: 20px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .carousel-content {
+    padding: 20px;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  
+}
+
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Adjust styles for medium screens here */
 }
@@ -29,13 +110,17 @@ img {
   height: 60px;
   width: 70px;
   margin-left: 60px;
-  margin-top: 5px;
+  padding: 10px;
+}
+.navbar-brand h1{
+  color: #3498db;
+  font-size: 21px;
+  margin-left: 60px;
 }
 .navbar {
   height: 65px; 
   background-color: #454545;
 }
-
 .navbar .nav-link {
   font-size: 20px;
   margin-right: 100px;
@@ -48,9 +133,9 @@ img {
   font-weight: bold; 
 }
 .nav-link.active {
-  color: blue;
+  color: red;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 23px;
 }
 .navbar-toggler {
   border: none; /* Remove the border */
@@ -66,13 +151,14 @@ img {
   float: left;
   width: 40%;
   margin-left: 40px;
-  margin-top: 150px;
+  margin-top: 170px;
 }
+
 .description1 {
-  font-size: 19px;
+  font-size: 18px;
 }
 .description2 {
-  font-size: 18px;
+  font-size: 17px;
   font-style: italic;
 }
 
@@ -91,7 +177,7 @@ strong {
   background-color: #3498db;
   color: white;
   transition: background-color 0.9s ease; /* Add a smooth transition for the background color change */
-  width: 120px;
+  width: 100px;
   height: 40px;
   font-size: 18px;
 }
@@ -104,7 +190,7 @@ strong {
   color: black;
   border-color: black;
   transition: background-color 0.9s ease;
-  width: 120px;
+  width: 100px;
   height: 40px;
   font-size: 18px;
 }
@@ -114,7 +200,7 @@ strong {
 }
 /* Optionally, add more styles to the image if needed */
 .image-container img {
-  width: 500px;
+  width: 400px;
   height: 400px;
   margin-top: 20px;
   display: block; /* Ensure the image is treated as a block element */
@@ -125,8 +211,13 @@ strong {
   margin-bottom: 1rem;
 }
 h2 {
-  font-size: 20px;
+  font-size: 23px;
   margin-top: 30px;
+}
+.blue-text {
+  color: #3498db; /* or any other blue color you prefer */
+  font-size: 23px;
+  font-weight: bold;
 }
 .profile {
   float: left;
@@ -175,7 +266,7 @@ h2 {
   display: inline-block;
   width: 500px;
   color: #e0e0e0;
-  font-size: 18px;
+  font-size: 17px;
   text-align: left;
   margin-left: 30px;
 }
@@ -222,7 +313,7 @@ h2 {
 
 .contact-item span.info {
   margin-left: 10px;
-  font-size: 20px; /* Adjust the font size as needed */
+  font-size: 17px; /* Adjust the font size as needed */
 }
 .social-media-icons {
   display: flex;
@@ -232,10 +323,18 @@ h2 {
   margin-bottom: 70px;
   margin-top: 40px;
 }
+.social-media-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  transition: opacity 0.3s ease-in-out;
+}
 
+.social-media-icons a:hover {
+  opacity: 0.5; 
+}
 #footer {
-  margin-top: 120px;
-  font-size: 19px;
+  margin-top: 30px;
+  font-size: 17px;
 }
 
 .social-media-icons svg {
@@ -244,40 +343,26 @@ h2 {
 
 .borderstyle {
   border: solid #3498db;
-  border-radius: 4em;
-}
-
-.icon-background {
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px; /* Adjust the size of the circular background */
-  height: 50px; /* Adjust the size of the circular background */
-}
-
+  border-radius: 10em;
+} 
 #project {
-  background-color: #3498db;
-  color: white;
-  height: 630px;
-  margin-top: 80px;
+  height: 670px;
+  padding-top: 105px;
 }
 .project:hover {
   transform: scale(1.1);
-  z-index: 1; /* Ensure the hovered element is above others */
+  z-index: 1; /* Ensures the hovered element is above others */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adjust the box shadow as needed */
 }
 .more-projects-button {
   margin-top: 20px;
   border-radius: 0em;
-  background-color: white;
-  color: black;
+  background-color:#3498db;
+  color: white;
   transition: background-color 0.9s ease;
   width: 150px;
   height: 40px;
   font-size: 18px;
-  border-radius: 2em;
 }
 .more-projects-button :hover {
   background-color: #3498db;
@@ -285,20 +370,17 @@ h2 {
 }
 #homes-section {
   height: 500px;
-  background-color: yellow;
 }
 #about {
-  margin-top: 80px;
-  height: 500px;
-  background-color: pink;
+  padding-top: 105px;
+  height: 600px;
 }
 #contact {
-  margin-top: 80px;
-  height: 450px;
-  background-color: green;
+  padding: 105px;
+  height: 500px;
 }
 h1 {
-  font-size: 35px;
+  font-size: 33px;
   font-weight: bold;
 }
 .project1 {
