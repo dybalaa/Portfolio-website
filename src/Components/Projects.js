@@ -24,43 +24,55 @@ export default class Projects extends Component {
     return (
       <section id="project" >
         <h1>Projects</h1>
-        <p style={{fontSize:'17px', marginTop:'30px',marginBottom:'30px'}}>
-        Explore My Works and Projects, Where Every Line of Code Tells a Unique Story of <br/>Innovation and Critical Thinking
+        <p style={{fontSize:'18px', marginTop:'30px',marginBottom:'30px', margin:'20px'}}>
+          Explore My Works and Projects, Where Every Line of Code Tells a Unique Story of Innovation and Critical Thinking
         </p>
-        <div>
-          <div className="project project1">
-            <Image src="/Images/ACD.png" fluid style={{ width: '100%', height: '320px' }} />
-            <a href="https://www.acdarts.com/" target="_blank" rel="noopener noreferrer">
-              <Button variant="primary" className="live-preview-button">
-                Live Preview
-              </Button>
-            </a>
+        <div className="about-content">
+          <div className="item">
+            <div className="image-container">
+              <Image src="/Images/ACD.png" fluid style={{ width: '100%', height: '320px' }} />
+              <div className="button-container">
+                <a href="https://www.acdarts.com/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="primary" className="live-preview-button">
+                    Live Preview
+                  </Button>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className="project project2">
-            <Image src="/Images/sebyntege.png" fluid style={{ width: '100%', height: '320px' }} />
-            <a href="https://sebyntege.co.uk/" target="_blank" rel="noopener noreferrer">
-              <Button variant="primary" className="live-preview-button">
-                Live Preview
-              </Button>
-            </a>
+          <div className="item">
+            <div className="image-container">
+              <Image src="/Images/sebyntege.png" fluid style={{ width: '100%', height: '320px' }} />
+              <div className="button-container">
+                <a href="https://sebyntege.co.uk/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="primary" className="live-preview-button">
+                    Live Preview
+                  </Button>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div className="project project3">
-            <Image src="/Images/grf.png" fluid style={{ width: '100%', height: '320px' }} />
-            <a href="https://girlrescuefoundation.org/" target="_blank" rel="noopener noreferrer">
-              <Button variant="primary" className="live-preview-button">
-                Live Preview
-              </Button>
-            </a>
+          <div className="item">
+            <div className="image-container">
+              <Image src="/Images/grf.png" fluid style={{ width: '100%', height: '320px' }} />
+              <div className="button-container">
+                <a href="https://girlrescuefoundation.org/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="primary" className="live-preview-button">
+                    Live Preview
+                  </Button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
         <Button variant="secondary" className="more-projects-button"  onClick={this.handleShowMoreProjects}>
-            More Projects
-          </Button>
+          More Projects
+        </Button>
 
-          <MoreProjects show={this.state.showMoreProjects} handleClose={this.handleCloseMoreProjects} />
+        <MoreProjects show={this.state.showMoreProjects} handleClose={this.handleCloseMoreProjects} />
 
       </section>
     );

@@ -1,4 +1,4 @@
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button, Card } from "react-bootstrap";
 import {
   FaPhone,
   FaEnvelope,
@@ -16,20 +16,19 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-     //Validates the field to ensure all fields have values before message is sent
-    const formFields = ["firstname", "lastname", "email", "Message"];
+    //Validates the field to ensure all fields have values before message is sent
+    const formFields = ["fullname", "email", "Message"];
     const isFormValid = formFields.every((field) => {
       const value = form.current[field].value;
       return value && value.trim() !== ""; // It will check if the field is not empty
     });
-  
+
     if (!isFormValid) {
       alert("Please fill in all fields before sending the message.");
       return;
     }
-  
+
     alert("Message sent successfully");
-  
 
     emailjs
       .sendForm(
@@ -54,77 +53,66 @@ const Contact = () => {
 
   return (
     <>
-      <section id="contact" >
+      <section id="contact">
         <h1>Get in touch</h1>
         <div className="contact-container">
           <div className="contact-form">
-            <h2> Message <span className="blue-text">me</span></h2>
-            <Row className="justify-content-center align-items-center flex-column">
-              {" "}
-              {/* Center the row horizontally */}
-              <Col lg="7">
-                <form
-                  className="contact_form w-100"
-                  ref={form}
-                  onSubmit={sendEmail}
-                >
-                  <Row className="mb-3">
-                    {" "}
-                    {/* spaces the rows */}
-                    <Col className="form-group">
-                      <input
-                        className="form-control rounded-0 borderstyle" 
-                        id="firstname"
-                        name="firstname"
-                        placeholder="First name"
-                        type="text"
-                      />
-                    </Col>
-                    <Col className="form-group">
-                      <input
-                        className="form-control rounded-0 borderstyle"
-                        id="lastname"
-                        name="lastname"
-                        placeholder="Last name"
-                        type="text"
-                        required
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-3">
-                    <input
-                      className="form-control rounded-0 borderstyle"
-                      id="senderEmail"
-                      name="email"
-                      placeholder="Email Address"
-                      type="email"
-                      required
-                    />
-                  </Row>
-                  <Row className="mb-3">
-                    <textarea
-                      className="form-control rounded-0 borderstyle"
-                      id="message"
-                      name="Message"
-                      placeholder="Message"
-                      rows="5"
-                      required
-                    ></textarea>
-                  </Row>
-                  <Button
-                    type="submit"
-                    variant="outline-primary"
-                    className="button-hire-me" 
-                  >
-                    Send
-                    <FaArrowRight className="submit-arrow" />
-                  </Button>{" "}
-                </form>
-              </Col>
-            </Row>
+            <Card className="contact-card">
+              <Card.Body>
+                <Row className="justify-content-center align-items-center flex-column">
+                  <Col lg="10">
+                    <form
+                      className="contact_form w-100"
+                      ref={form}
+                      onSubmit={sendEmail}
+                    >
+                      <Row className="mb-3">
+                        <input
+                          className="form-control rounded-0 borderstyle"
+                          id="fullname"
+                          name="fullname"
+                          placeholder="Full name"
+                          type="text"
+                        />
+                      </Row>
+                      <Row className="mb-3">
+                        <input
+                          className="form-control rounded-0 borderstyle"
+                          id="senderEmail"
+                          name="email"
+                          placeholder="Email Address"
+                          type="email"
+                          required
+                        />
+                      </Row>
+                      <Row className="mb-3">
+                        <textarea
+                          className="form-control rounded-0 borderstyle"
+                          id="message"
+                          name="Message"
+                          placeholder="Message"
+                          rows="5"
+                          required
+                        ></textarea>
+                      </Row>
+                      <Button
+                        type="submit"
+                        variant="outline-primary"
+                        className="button-hire-me"
+                      >
+                        Send
+                        <FaArrowRight className="submit-arrow" />
+                      </Button>{" "}
+                    </form>
+                  </Col>
+                </Row>
+              </Card.Body>
+            </Card>
           </div>
           <div className="contact-info">
-            <h2>Connect <span className="blue-text">with me</span></h2>
+            <h2>
+              Connect <span className="blue-text">with me</span>
+            </h2>
             <div className="contact-item">
               <FaPhone size={33} color="black" />
               <span className="info">+447475494000 </span>

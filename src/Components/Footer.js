@@ -15,6 +15,8 @@ export default function App() {
   };
 
   return (
+    <>
+    <section id='Footer'>
     <MDBFooter id='footer' className='text-center' color='white' bgColor='dark'>
       <MDBContainer className='p-4'>
         <section className='mb-4'>
@@ -58,5 +60,7 @@ export default function App() {
 
       
     </MDBFooter>
+    </section>
+    </>
   );
 }
