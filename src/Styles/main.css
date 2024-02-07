@@ -337,7 +337,6 @@ h1 {
 .home-main{
 display: flex;
 justify-content: space-between;
-padding: 20px;
 margin-top: 70px;
 }
 .description,.image-container{
@@ -352,7 +351,7 @@ margin-top: 70px;
 .about-content {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+
 }
 
 .item{
@@ -379,7 +378,6 @@ padding: 20px;
 }
 .contact-form, .contact-info{
   flex: 2;
-  padding: 20px;
   text-align: left;
 }
 .contact-info{
