@@ -343,7 +343,6 @@ margin-top: 70px;
   flex: 1;
   padding: 20px;
   text-align: left;
-
 }
 .image-container{
   text-align: center;
@@ -351,12 +350,10 @@ margin-top: 70px;
 .about-content {
   display: flex;
   justify-content: space-between;
-
 }
 
 .item{
   flex: 1;
-  padding: 20px;
   margin: 5px;
   text-align: left;
 }
@@ -374,7 +371,6 @@ margin-top: 70px;
 .contact-container{
 display: flex;
 justify-content: space-between;
-padding: 20px;
 }
 .contact-form, .contact-info{
   flex: 2;
