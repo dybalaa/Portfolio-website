@@ -29,7 +29,7 @@ export default class Projects extends Component {
         </p>
         <div className="about-content">
           <div className="item">
-            <div className="image-container">
+            <div className="image-container rounded">
               <Image src="/Images/ACD.png" fluid style={{ width: '100%', height: '320px' }} />
               <div className="button-container">
                 <a href="https://www.acdarts.com/" target="_blank" rel="noopener noreferrer">
@@ -42,7 +42,7 @@ export default class Projects extends Component {
           </div>
 
           <div className="item">
-            <div className="image-container">
+            <div className="image-container rounded">
               <Image src="/Images/sebyntege.png" fluid style={{ width: '100%', height: '320px' }} />
               <div className="button-container">
                 <a href="https://sebyntege.co.uk/" target="_blank" rel="noopener noreferrer">
@@ -55,7 +55,7 @@ export default class Projects extends Component {
           </div>
 
           <div className="item">
-            <div className="image-container">
+            <div className="image-container rounded">
               <Image src="/Images/grf.png" fluid style={{ width: '100%', height: '320px' }} />
               <div className="button-container">
                 <a href="https://girlrescuefoundation.org/" target="_blank" rel="noopener noreferrer">

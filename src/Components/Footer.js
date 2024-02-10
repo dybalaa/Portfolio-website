@@ -51,14 +51,6 @@ export default function App() {
         </section>
 
       </MDBContainer>
-
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-    
-        <p>Developed in React js and Emailjs </p>
-
-      </div>
-
-      
     </MDBFooter>
     </section>
     </>

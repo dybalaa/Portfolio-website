@@ -57,7 +57,7 @@ const Contact = () => {
         <h1>Get in touch</h1>
         <div className="contact-container">
           <div className="contact-form">
-            <Card className="contact-card">
+            <Card className="contact-card mx-0 mx-md-auto">
               <Card.Body>
                 <Row className="justify-content-center align-items-center flex-column">
                   <Col lg="10">

@@ -10,7 +10,9 @@
   * {
     box-sizing: border-box;
   }
-
+  .navbar-nav {
+    margin-left: auto !important;
+  }
   .navbar-dark .navbar-collapse {
     background-color: #333; /* Set the background color of the navbar when collapsed to black */
   }
@@ -35,17 +37,20 @@
 .contact-container{
   flex-direction: column;
 }
+.contact-card {
+  padding: 0;
+}
 #about{
-  margin-top: 450px;
+  margin-top: 500px;
 }
 #project{
-  margin-top: 1000px;
+  margin-top: 1100px;
 }
 #contact{
-  margin-top:850px;
+  margin-top:900px;
 }
 #Footer{ 
-  margin-top: 400px;
+  margin-top: 500px;
 }
 
 }
@@ -263,7 +268,7 @@ h3{
   opacity: 0.5; 
 }
 #footer {
-  margin-top: 120px;
+  margin-top: 170px;
   font-size: 17px;
 }
 
@@ -306,10 +311,10 @@ h3{
 }
 #project {
   height: 700px;
-  padding-top: 120px;
+  padding-top: 100px;
 }
 #contact {
-  padding-top: 120px;
+  padding-top: 200px;
   height: 600px;
 }
 h1 {
@@ -333,15 +338,18 @@ h1 {
   margin-right: 5px;
   margin-left: 30px;
 }
-
+.rounded {
+  border-radius: 10px; /* Adjust the radius as needed */
+}
 .home-main{
 display: flex;
 justify-content: space-between;
 margin-top: 70px;
+padding: 20px;
 }
 .description,.image-container{
   flex: 1;
-  padding: 20px;
+  padding: 40px;
   text-align: left;
 }
 .image-container{
@@ -350,12 +358,14 @@ margin-top: 70px;
 .about-content {
   display: flex;
   justify-content: space-between;
+  padding: 40px;
 }
 
 .item{
   flex: 1;
-  margin: 5px;
   text-align: left;
+  padding: 20px;
+  margin-left: 2px;
 }
 .icon-image {
   width: 40px;
@@ -371,14 +381,17 @@ margin-top: 70px;
 .contact-container{
 display: flex;
 justify-content: space-between;
+padding: 40px;
 }
 .contact-form, .contact-info{
   flex: 2;
   text-align: left;
+  padding: 20px;
 }
 .contact-info{
   flex: 1;
   text-align: left;
+  margin-left: 15px;
 }
 .contact-card {
   background-color: #fff; /* White background color */
