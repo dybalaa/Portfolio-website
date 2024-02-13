@@ -47,7 +47,7 @@
   margin-top: 1100px;
 }
 #contact{
-  margin-top:900px;
+  margin-top:1000px;
 }
 #Footer{ 
   margin-top: 500px;
@@ -362,6 +362,7 @@ padding: 20px;
 }
 
 .item{
+  position: relative;
   flex: 1;
   text-align: left;
   padding: 20px;
@@ -440,20 +441,20 @@ padding: 40px;
   position: relative;
 }
 
-.button-container {
+.icon-image {
+  transition: transform 0.3s ease;
+}
+
+.item:hover .icon-image {
+  transform: rotate(360deg); /* Adjust the degree of rotation as needed */
+}
+.live-link-button-container {
   position: absolute;
-  bottom: 10px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
-
-.image-container:hover .button-container {
-  opacity: 1;
-}
-
-
 
 
 

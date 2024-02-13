@@ -3,6 +3,8 @@ import { Nav, Navbar, Image, Button } from "react-bootstrap";
 import "../Styles/main.css";
 import { Link as ScrollLink } from "react-scroll";
 
+
+
 export default class Home extends Component {
   constructor(props) {
     super(props);
