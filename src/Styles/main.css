@@ -40,18 +40,6 @@
 .contact-card {
   padding: 0;
 }
-#about{
-  margin-top: 500px;
-}
-#project{
-  margin-top: 1100px;
-}
-#contact{
-  margin-top:1000px;
-}
-#Footer{ 
-  margin-top: 500px;
-}
 
 }
 
@@ -268,7 +256,7 @@ h3{
   opacity: 0.5; 
 }
 #footer {
-  margin-top: 170px;
+  margin-top: 20px;
   font-size: 17px;
 }
 
@@ -301,21 +289,21 @@ h3{
   color: white;
 }
 #homes-section {
-  height: 500px;
+  min-height: 500px;
   padding-top: 5px; 
 }
 #about {
-  height: 950px;
-  padding-top: 100px;
+  min-height: 950px;
+  padding-top: 80px;
 
 }
 #project {
-  height: 700px;
-  padding-top: 95px;
+  min-height: 700px;
+  padding-top: 90px;
 }
 #contact {
-  padding-top: 200px;
-  height: 600px;
+  padding-top: 150px;
+  min-height: 600px;
 }
 h1 {
   font-size: 33px;
@@ -367,6 +355,7 @@ padding: 20px;
   text-align: left;
   padding: 20px;
   margin-left: 2px;
+
 }
 .icon-image {
   width: 40px;
