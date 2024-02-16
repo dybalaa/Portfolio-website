@@ -33,9 +33,17 @@
  } 
 .about-content{
   flex-direction: column;
+  padding: 0;
 } 
+.item {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-left: 0;
+  padding: 0;
+}
 .contact-container{
   flex-direction: column;
+  padding: 0;
 }
 .contact-card {
   padding: 0;
@@ -295,7 +303,6 @@ h3{
 #about {
   min-height: 950px;
   padding-top: 80px;
-
 }
 #project {
   min-height: 700px;
@@ -333,7 +340,6 @@ h1 {
 display: flex;
 justify-content: space-between;
 margin-top: 70px;
-padding: 20px;
 }
 .description,.image-container{
   flex: 1;
@@ -346,7 +352,6 @@ padding: 20px;
 .about-content {
   display: flex;
   justify-content: space-between;
-  padding: 40px;
 }
 
 .item{
@@ -354,8 +359,6 @@ padding: 20px;
   flex: 1;
   text-align: left;
   padding: 20px;
-  margin-left: 2px;
-
 }
 .icon-image {
   width: 40px;
@@ -371,7 +374,6 @@ padding: 20px;
 .contact-container{
 display: flex;
 justify-content: space-between;
-padding: 40px;
 }
 .contact-form, .contact-info{
   flex: 2;
