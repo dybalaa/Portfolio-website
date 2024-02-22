@@ -46,8 +46,8 @@ export default function App() {
 
        
 
-        <section className='mb-4'>
-        <p>&copy; Ubar Kasozi 2023 ||  All rights reserved  || Terms and conditions apply</p>
+        <section className='mb-4' style={{fontSize: '17px'}}>
+        <p>&copy; Ubar Kasozi 2023 ||  All rights reserved  || Developed in React js , Tailwind CSS</p>
         </section>
 
       </MDBContainer>

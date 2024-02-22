@@ -55,6 +55,10 @@ const Contact = () => {
     <>
       <section id="contact">
         <h1>Get in touch</h1>
+        <hr/>
+        <p style={{ fontSize: '17px', marginTop: '30px', marginBottom: '30px', margin: '20px' }}>
+                    Lets connect and bring innovative ideas to life
+                </p>
         <div className="contact-container">
           <div className="contact-form">
             <Card className="contact-card mx-0 mx-md-automywebsite/public/Images/acd2.png">
@@ -114,19 +118,19 @@ const Contact = () => {
               Connect <span className="blue-text">with me</span>
             </h2>
             <div className="contact-item">
-              <FaPhone size={33} color="black" />
+              <FaPhone size={30} color="black" />
               <span className="info">+447475494000 </span>
             </div>
             <div className="contact-item">
-              <FaMapMarkerAlt size={33} color="black" />
+              <FaMapMarkerAlt size={30} color="black" />
               <span className="info">London, United Kingdom</span>
             </div>
             <div className="contact-item">
-              <FaEnvelope size={33} color="black" />
+              <FaEnvelope size={30} color="black" />
               <span className="info">kasoziubar97@gmail.com</span>
             </div>
             <div className="contact-item">
-              <FaWhatsapp size={33} color="black" />
+              <FaWhatsapp size={30} color="black" />
               <span className="info">+256706427289 </span>
             </div>
           </div>

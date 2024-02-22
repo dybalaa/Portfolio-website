@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
-/* main.css */
-
-/* Existing styles */
 
 /* Medium screens (tablets) */
 
@@ -31,16 +28,12 @@
  .description{
   margin-bottom: 10px;
  } 
+
 .about-content{
   flex-direction: column;
   padding: 0;
 } 
-.item {
-  width: 100%;
-  margin-bottom: 20px;
-  margin-left: 0;
-  padding: 0;
-}
+
 .contact-container{
   flex-direction: column;
   padding: 0;
@@ -72,7 +65,7 @@
   font-family: "Titillium Web", sans-serif;
 }
 .navbar-brand h1{
-  color: #3498db;
+  color: white;
   font-size: 21px;
   margin-left: 60px;
 }
@@ -111,7 +104,7 @@
   font-size: 18px;
 }
 .description2 {
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 30px;
 }
 
@@ -157,16 +150,16 @@ strong {
   margin-bottom: 1rem;
 }
 h2 {
-  font-size: 26px;
+  font-size: 23px;
   margin-top: 30px;
 }
 .blue-text {
-  color: #3498db; /* or any other blue color you prefer */
-  font-size: 26px;
+  color: #3498db; 
+  font-size: 23px;
   font-weight: bold;
 }
 h3{
-  font-size: 20px;
+  font-size: 18px;
 }
 .profile {
   float: left;
@@ -264,7 +257,7 @@ h3{
   opacity: 0.5; 
 }
 #footer {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 17px;
 }
 
@@ -305,15 +298,16 @@ h3{
   padding-top: 80px;
 }
 #project {
-  min-height: 700px;
+  min-height: 600px;
   padding-top: 90px;
+
 }
 #contact {
-  padding-top: 150px;
+  padding-top: 98px;
   min-height: 600px;
 }
 h1 {
-  font-size: 33px;
+  font-size: 30px;
   font-weight: bold;
 }
 .project1 {
@@ -339,15 +333,16 @@ h1 {
 .home-main{
 display: flex;
 justify-content: space-between;
-margin-top: 70px;
+margin-top: 100px;
 }
 .description,.image-container{
-  flex: 1;
-  padding: 40px;
+  flex: 2;
+  padding: 20px;
   text-align: left;
 }
 .image-container{
   text-align: center;
+  flex: 1;
 }
 .about-content {
   display: flex;
@@ -360,9 +355,16 @@ margin-top: 70px;
   text-align: left;
   padding: 20px;
 }
+.item_about{
+  position: relative;
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
 .icon-image {
-  width: 40px;
-  height: 40px; 
+  width: 35px;
+  height: 35px; 
   margin-right: 20px; 
 }
 .item ul {
@@ -374,6 +376,7 @@ margin-top: 70px;
 .contact-container{
 display: flex;
 justify-content: space-between;
+
 }
 .contact-form, .contact-info{
   flex: 2;
@@ -383,7 +386,6 @@ justify-content: space-between;
 .contact-info{
   flex: 1;
   text-align: left;
-  margin-left: 15px;
 }
 .contact-card {
   background-color: #fff; /* White background color */
@@ -406,7 +408,7 @@ justify-content: space-between;
   margin-top: 15px; /* Add spacing above the submit button */
 }
 .contact-info span.info {
-  font-size: 18px;
+  font-size: 17px;
 }
 .icon2-image{
   width: 42px;
@@ -427,11 +429,6 @@ justify-content: space-between;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-
-.image-container {
-  position: relative;
-}
-
 .icon-image {
   transition: transform 0.3s ease;
 }
@@ -445,6 +442,12 @@ justify-content: space-between;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+hr{
+  border: 2px solid #3498db;
+  width: 80px;
+  margin: auto;
+  margin-top: 10px;
 }
 
 

@@ -35,7 +35,7 @@ export default class About extends Component {
       <>
         <section id="about" >
           <h1>Who I am</h1>
-
+          <hr/>
           <h2>My <span className="blue-text">skills</span></h2>
 
           <div className="about-content">
@@ -46,7 +46,7 @@ export default class About extends Component {
                 {programmingLanguages.map((language, index) => (
                   <li key={index}>
                     <img src={language.icon} alt={language.name} className="icon-image" />
-                    {language.name}
+                    <span style={{ fontSize: "16px" }}>{language.name}</span>
                   </li>
                 ))}
               </ul>
@@ -61,7 +61,7 @@ export default class About extends Component {
                 {frameworks.map((language, index) => (
                   <li key={index}>
                     <img src={language.icon} alt={language.name} className="icon-image" />
-                    {language.name}
+                    <span style={{ fontSize: "16px" }}>{language.name}</span>
                   </li>
                 ))}
               </ul>
@@ -76,7 +76,7 @@ export default class About extends Component {
                 {tools.map((language, index) => (
                   <li key={index}>
                     <img src={language.icon} alt={language.name} className="icon-image" />
-                    {language.name}
+                    <span style={{ fontSize: "16px" }}>{language.name}</span>
                   </li>
                 ))}
               </ul>
@@ -94,13 +94,13 @@ export default class About extends Component {
                   <img src="/Images/webdev.png" className="icon-image" alt="web dev"/>
                     <h2
                       style={{
-                        fontSize: "18px",
+                        fontSize: "17px",
                         marginTop: "17px",
                       }}
                     >
                       Web Development
                     </h2>
-                    <p style={{ marginTop: "10px", fontSize: "18px" }}>
+                    <p style={{ marginTop: "10px", fontSize: "16px" }}>
 
                     specialising in full-stack development for web applications and 
                     dynamic, responsive websites. 
@@ -123,13 +123,13 @@ export default class About extends Component {
                       <img src="/Images/mobiledev.png" className="icon-image" alt="mobile dev" />
                     <h2
                       style={{
-                        fontSize: "18px",
+                        fontSize: "17px",
                         marginTop: "17px",
                       }}
                     >
                       Mobile Development
                     </h2>
-                    <p style={{ marginTop: "10px", fontSize: "18px" }}>
+                    <p style={{ marginTop: "18px", fontSize: "16px" }}>
                     I specialise in developing dynamic, responsive mobile applications 
                     as a React Native developer. I create interactive interfaces that
                      guarantee a visually appealing and user experience.
@@ -150,13 +150,13 @@ export default class About extends Component {
                       <img src="/Images/collaboration.png" className="icon-image" alt="collaboration" />
                     <h2
                       style={{
-                        fontSize: "18px",
+                        fontSize: "17px",
                         marginTop: "17px",
                       }}
                     >
                       Consultation & collaboration
                     </h2>
-                    <p style={{ marginTop: "10px", fontSize: "18px" }}>
+                    <p style={{ marginTop: "10px", fontSize: "16px" }}>
                     
                     Get advice on technology stacks or work with your group. With my consulting services,
                      you may be sure that your projects follow industry standards and best practices.

@@ -123,7 +123,7 @@ export default class Home extends Component {
               </p>
               <p className="description2">
                 I'm a First Class Graduate of Information Technology and a
-                technology ethusiast with expertise web development where i
+                technology ethusiast with expertise web development where I
                 create scalable, robust and user-friendly websites and
                 applications
               </p>
